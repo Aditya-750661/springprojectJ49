@@ -25,7 +25,7 @@ public class AnswerController {
 
 	@GetMapping("get/{id}")
 	public Answer getById(@PathVariable("id") int id) {
-
+System.out.println("heloo world");
 		return answerService.getById(id);
 	}
 
