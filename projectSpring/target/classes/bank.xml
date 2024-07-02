@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+     <!--    
+        <bean id="branch" class="com.model1.Branch">
+        	<property name="branchAddress" value="S.B Road"></property>
+        	<property name="ifscCode" value="ITSSDE890"></property>
+        </bean>
+        
+        <bean id = "bank" class="com.model1.Bank">
+        	<property name="bankId" value="1242"></property>
+        	<property name="bankName" value="SBI"></property>
+        	<property name="branch" ref="branch"></property>
+        </bean> -->
+        
+        
+        
+        <bean id = "branch" class="com.model1.Branch">
+        	<constructor-arg name = "branchAddress" value="Model colony"></constructor-arg>
+        	<constructor-arg name = "ifscCode" value="Idb8907"></constructor-arg>
+        </bean>
+        
+        <bean id="bank" class="com.model1.Bank">
+        <constructor-arg name = "bankId" value="1458"></constructor-arg>
+        <constructor-arg name = "bankName" value = "IDFC"></constructor-arg>
+        <constructor-arg name = "branch" ref="branch"></constructor-arg>
+        </bean>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+</beans>
+        
